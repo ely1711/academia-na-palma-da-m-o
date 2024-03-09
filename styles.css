@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #0a090977;
+    text-shadow: 2px 2px 4px rgba(227, 231, 4, 0.329);
+}
+
+.semana {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dia {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #838180;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #141111c0;
+    color: #f4f814af;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Estilos da aba "Exemplos de Treinos" */
+.exemplos-treinos {
+    display: none;
+    margin-top: 20px;
+}
+
+.exemplos-treinos input[type="radio"] {
+    display: none;
+}
+
+.exemplos-treinos label {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px 5px 0 0;
+    font-size: 18px;
+}
+
+.exemplos-treinos .aba-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.exemplos-treinos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.exemplos-treinos .treinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.exemplos-treinos .treino {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exemplos-treinos .treino h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.exemplos-treinos .treino p {
+    margin-bottom: 10px;
+}
+
+.exemplos-treinos .treino ul {
+    margin-left: 20px;
+}
+
+.exemplos-treinos .treino ul li {
+    margin-bottom: 5px;
+}
