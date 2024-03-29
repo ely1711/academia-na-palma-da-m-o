@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+
     <title>Agenda de Academia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon-192x192.png">
+    <link rel="manifest" href="%public_url%/manifest.json">
+
+<script>
+if (typeof navigator.serviceWorker !== 'undefined'){
+  navigator.serviceWorker.register ('pwabuilder-sw.js')
+}
+
+</script>
+
 </head>
 <body>
     <div class="container">
@@ -47,6 +59,19 @@
 <script src="script.js"></script>
 </body>
 
-
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch(error => {
+            console.error('Erro ao registrar o Service Worker:', error);
+          });
+      });
+    }
+  </script>
+  
 
 </html>
