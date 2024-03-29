@@ -10,13 +10,11 @@
     <link rel="icon" href="icon-512x512.png">
     <link rel="manifest" href="%public_url%/manifest.json">
 
-<script>
-if (typeof navigator.serviceWorker !== 'undefined'){
-  navigator.serviceWorker.register ('pwabuilder-sw.js')
-}
-
-</script>
-
+    <script>
+        if (typeof navigator.serviceWorker !== 'undefined'){
+            navigator.serviceWorker.register ('pwabuilder-sw.js')
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -28,50 +26,42 @@ if (typeof navigator.serviceWorker !== 'undefined'){
             <button class="dia">Qui</button>
             <button class="dia">Sex</button>
             <button class="dia">Sáb</button>
-           
         </div>
         <textarea id="treino" placeholder="Insira o treino aqui..."></textarea>
         <button id="salvar">Salvar Treino</button>
     </div>
+
+    <div class="informacoes">
+        <input type="radio" name="abas" id="aba-info" checked>
+        <label for="aba-info">Informações</label>
+        <div class="aba-content">
+            <h2>Academia</h2>
+            <p>A Academia Fitness é um centro de condicionamento físico que se dedica a ajudar as pessoas a alcançarem seus objetivos de saúde e bem-estar. Nossa missão é proporcionar um ambiente acolhedor e motivador para que você possa alcançar seus objetivos de fitness.</p>
+            <h3>O que oferecemos:</h3>
+            <ul>
+                <li>Aulas de grupo, incluindo spinning, ioga e treinamento funcional</li>
+                <li>Equipamentos de última geração para musculação e cardio</li>
+                <li>Personal trainers disponíveis para treinamento individualizado</li>
+                <li>Sauna e área de relaxamento</li>
+                <li>Programas de nutrição e acompanhamento de progresso</li>
+            </ul>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
-
-
-
-<div class="informacoes">
-    <input type="radio" name="abas" id="aba-info" checked>
-    <label for="aba-info">Informações</label>
-    <div class="aba-content">
-        <h2>Academia</h2>
-        <p>A Academia Fitness é um centro de condicionamento físico que se dedica a ajudar as pessoas a alcançarem seus objetivos de saúde e bem-estar. Nossa missão é proporcionar um ambiente acolhedor e motivador para que você possa alcançar seus objetivos de fitness.</p>
-        <h3>O que oferecemos:</h3>
-        <ul>
-            <li>Aulas de grupo, incluindo spinning, ioga e treinamento funcional</li>
-            <li>Equipamentos de última geração para musculação e cardio</li>
-            <li>Personal trainers disponíveis para treinamento individualizado</li>
-            <li>Sauna e área de relaxamento</li>
-            <li>Programas de nutrição e acompanhamento de progresso</li>
-        </ul>
-    </div>
-</div>
-
-<script src="script.js"></script>
-</body>
-
 <script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(registration => {
-          console.log('Service Worker registrado com sucesso:', registration);
-        })
-        .catch(error => {
-          console.log('Falha ao registrar o Service Worker:', error);
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registrado com sucesso:', registration);
+                })
+                .catch(error => {
+                    console.log('Falha ao registrar o Service Worker:', error);
+                });
         });
-    });
-  }
+    }
 </script>
-
-
 </html>
