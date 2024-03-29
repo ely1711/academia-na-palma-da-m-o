@@ -1,42 +1,40 @@
 
 
-/* Reset de estilos para garantir consistência entre navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos para o corpo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
-/* Estilos para o container principal */
+
 .container {
-    max-width: 800px; /* Define a largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    max-width: 800px; 
+    margin: 0 auto; 
     padding: 20px;
 }
 
-/* Estilos para o cabeçalho (h1) */
+
 h1 {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Estilos para os botões da semana */
+
 .semana {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-/* Estilos para os botões */
+
 .dia {
-    flex-grow: 1; /* Distribui igualmente o espaço entre os botões */
+    flex-grow: 1; 
     padding: 10px;
     background-color: #317EFB;
     color: #fff;
@@ -50,7 +48,7 @@ h1 {
     background-color: #1E62D0;
 }
 
-/* Estilos para a área de texto */
+
 #treino {
     width: 100%;
     padding: 10px;
@@ -59,7 +57,7 @@ h1 {
     border-radius: 5px;
 }
 
-/* Estilos para o botão salvar */
+
 #salvar {
     width: 100%;
     padding: 10px;
@@ -75,12 +73,12 @@ h1 {
     background-color: #45a049;
 }
 
-/* Estilos para as informações */
+
 .informacoes {
     margin-top: 20px;
 }
 
-/* Estilos para a aba de informações */
+
 .aba-content {
     display: none;
     padding: 20px;
@@ -89,7 +87,7 @@ h1 {
     border-radius: 5px;
 }
 
-/* Estilos para o conteúdo da aba quando estiver selecionada */
+
 input[type="radio"]:checked + .aba-content {
     display: block;
 }
