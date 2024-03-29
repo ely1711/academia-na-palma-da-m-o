@@ -1,5 +1,4 @@
 
-
 const CACHE_NAME = 'my-site-cache-v1';
 const urlsToCache = [
   '/',
@@ -34,10 +33,10 @@ self.addEventListener('fetch', event => {
         // Clone the request
         const fetchRequest = event.request.clone();
 
-        return fetch(fetchRequest).then(
-          response => {
+        return fetch(fetchRequest)
+          .then(response => {
             // Check if we received a valid response
-            if(!response || response.status !== 200 || response.type !== 'basic') {
+            if (!response || response.status !== 200 || response.type !== 'basic') {
               return response;
             }
 
@@ -50,8 +49,7 @@ self.addEventListener('fetch', event => {
               });
 
             return response;
-          }
-        );
+          });
       })
-    );
+  );
 });
