@@ -12,13 +12,13 @@
 
     <script>
         if (typeof navigator.serviceWorker !== 'undefined'){
-            navigator.serviceWorker.register ('pwabuilder-sw.js')
+            navigator.serviceWorker.register('pwabuilder-sw.js');
         }
     </script>
 </head>
 <body>
     <div class="container">
-        <h1>academia na palma da mão</h1>
+        <h1>Academia na Palma da Mão</h1>
         <div class="semana">
             <button class="dia">Seg</button>
             <button class="dia">Ter</button>
@@ -50,18 +50,4 @@
 
     <script src="script.js"></script>
 </body>
-
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registrado com sucesso:', registration);
-                })
-                .catch(error => {
-                    console.log('Falha ao registrar o Service Worker:', error);
-                });
-        });
-    }
-</script>
 </html>
