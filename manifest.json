@@ -4,6 +4,30 @@
   "start_url": "/",
   "display": "standalone",
   "icons": [
+
+
+    {
+      "theme_color": "#317EFB"
+      
+    },
+
+    {
+      
+      "icons": [
+        
+        {
+          "src": "path/to/maskable_icon.png",
+          "sizes": "196x196",
+          "type": "image/png",
+          "purpose": "maskable"
+        }
+      ]
+      
+    },
+
+
+
+
     {
       "sizes": "114x114",
       "src": "https://github.githubassets.com/assets/apple-touch-icon-114x114-09ce42d3ca4b.png"
